@@ -1,0 +1,18 @@
+.alert:empty {
+  display: none;
+}
+
+.alert {
+  font-size: 22px;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.alert-info {
+  color: #3c763d;
+}
+
+.alert-danger {
+  color: #a94442;
+}

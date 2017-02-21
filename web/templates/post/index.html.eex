@@ -1,0 +1,14 @@
+<ul class="posts">
+  <%= for post <- @posts do %>
+  <li>
+    <%= calendar(post.inserted_at) %>
+    <h3><%= link post.title, to: post_path(@conn, :show, post) %></h3>
+    <span class="post-author"><%= post.author %></span>
+    <div class="post-content line-clamp"><%= text_to_html post.content %></div>
+  </li>
+  <% end %>
+</ul>
+
+<ul class="buttons">
+  <li><%= link "New post", to: post_path(@conn, :new) %></li>
+</ul>

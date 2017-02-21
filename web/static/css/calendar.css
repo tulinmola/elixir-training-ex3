@@ -1,0 +1,24 @@
+.calendar {
+  width: 48px;
+  text-align: center;
+  border: 1px solid #666;
+}
+
+.calendar-month, .calendar-day {
+  display: block;
+}
+
+.calendar-month {
+  background-color: #666;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.calendar-day {
+  font-size: 28px;
+  line-height: 37px;
+  color: #666;
+}

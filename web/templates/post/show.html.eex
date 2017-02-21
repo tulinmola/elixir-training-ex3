@@ -1,0 +1,9 @@
+<%= calendar(@post.inserted_at) %>
+<h3 class="post-title"><%= @post.title %></h3>
+<span class="post-author"><%= @post.author %></span>
+<div class="post-content"><%= text_to_html @post.content %></div>
+
+<ul class="buttons">
+  <li><%= link "Edit", to: post_path(@conn, :edit, @post) %></li>
+  <li><%= link "Back", to: post_path(@conn, :index) %></li>
+</ul>

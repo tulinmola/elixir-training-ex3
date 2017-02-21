@@ -1,0 +1,6 @@
+<%= render "form.html", changeset: @changeset,
+                        action: post_path(@conn, :create) %>
+
+<ul class="buttons">
+  <li><%= link "Back", to: post_path(@conn, :index) %></li>
+</ul>

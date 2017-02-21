@@ -1,0 +1,9 @@
+.buttons {
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.buttons li {
+  display: inline-block;
+  margin-left: 8px;
+}
